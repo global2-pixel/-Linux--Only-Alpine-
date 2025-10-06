@@ -14,7 +14,7 @@
 
 **作者**: @buyi06  
 **版本**: v1.0 Final  
-**兼容系统**: Debian / Ubuntu / AlmaLinux / Rocky / CentOS / Arch / openSUSE / Alpine / KVM / 云主机  
+**兼容系统**: Alpine 
 **目标**: "一键执行，全程安全、自动持久化、无副作用的网络性能优化脚本"
 
 ---
@@ -37,14 +37,14 @@
 推荐直接执行以下命令：
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/buyi06/-Linux-/main/universal_optimize.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/global2-pixel/-Linux--Only-Alpine-/refs/heads/main/universal_optimize.sh)"
 ```
 
 ---
 
 📊 查看状态
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/buyi06/-Linux-/main/universal_optimize.sh)" status
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/global2-pixel/-Linux--Only-Alpine-/refs/heads/main/universal_optimize.sh)" status
 
 **输出示例**:
 ```
@@ -71,7 +71,7 @@ univ-offload@eth0.service: active
 ### 🩹 自动修复缺失项
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/buyi06/-Linux-/main/universal_optimize.sh | bash -s -- repair
+curl -fsSL https://raw.githubusercontent.com/global2-pixel/-Linux--Only-Alpine-/refs/heads/main/universal_optimize.sh | bash -s -- repair
 脚本会检测并修复：
 - sysctl 配置文件是否存在
 - offload / irqpin systemd 服务是否丢失
@@ -85,7 +85,7 @@ curl -fsSL https://raw.githubusercontent.com/buyi06/-Linux-/main/universal_optim
 若你的网卡名称不是 eth0（比如 ens3），可以手动指定：
 
 ```bash
-IFACE=ens3 bash -c "$(curl -fsSL https://raw.githubusercontent.com/buyi06/-Linux-/main/universal_optimize.sh)" apply
+IFACE=ens3 bash -c "$(curl -fsSL https://raw.githubusercontent.com/global2-pixel/-Linux--Only-Alpine-/refs/heads/main/universal_optimize.sh)" apply
 ```
 
 ---
